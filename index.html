@@ -3,8 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
+	
 </head>
 <body>
 	<h1>Hi</h1>
+	<p>This plugin only <span id="lines">0</span> lines of code.</p>
+	<p>This plugin only <span id="lines2">0</span> lines of code.</p>
+	<p>This plugin only <span id="lines3">0</span> lines of code.</p>
+	<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+	<script src="jquery.animateNumber.js"></script>
+	<script>
+
+	  $('#lines').animateNumber({ 
+	  	number: 100, 
+	  	easing: 'easeOutCubic' 
+	  },1500);
+	  $('#lines2').animateNumber({ number: 90, 
+	  	easing: 'easeOutCubic' },3000);
+	  $('#lines3').animateNumber({ number: 200, 
+	  	easing: 'easeOutCubic' },4500);
+
+	</script>
 </body>
 </html>
